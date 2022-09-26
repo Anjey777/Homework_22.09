@@ -7,8 +7,13 @@
 
 Console.WriteLine("Введите пятизначное число:");
 int number = int.Parse(Console.ReadLine());
-if ((number/100==number%10*10+number%100/10)) 
+int returnNumber = 0;
+while (number != 0)
+{
+    returnNumber = (returnNumber * 10) + (number % 10);
+    number/=10;
+}
+if (number==returnNumber) 
 Console.Write("ДА!");
 else
     Console.Write("НЕТ");
-
