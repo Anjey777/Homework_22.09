@@ -7,13 +7,7 @@
 
 Console.WriteLine("Введите пятизначное число:");
 int number = int.Parse(Console.ReadLine());
-int returnNumber = 0;
-while (number != 0)
-{
-    returnNumber = (returnNumber * 10) + (number % 10);
-    number/=10;
-}
-if (number==returnNumber) 
-Console.Write("ДА!");
+if (number == int.Parse(new string(number.ToString().Reverse().ToArray())))
+    Console.WriteLine($"ДА! {number} - это палиндром");
 else
-    Console.Write("НЕТ");
+    Console.WriteLine($"НЕТ! {number} - это не палиндром");

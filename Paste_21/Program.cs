@@ -3,3 +3,12 @@
 A (3,6,8); B (2,1,-7), -> 15.84
 A (7,-5, 0); B (1,-1,9) -> 11.53
 */
+
+
+Console.WriteLine("Введите пятизначное число:");
+
+int number = int.Parse(Console.ReadLine());
+if (number == int.Parse(new string(number.ToString().Reverse().ToArray())))
+Console.Write("ДА! - это поли");
+else
+    Console.Write("НЕТ!");
