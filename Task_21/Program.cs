@@ -19,7 +19,7 @@ Console.Write("Введите B3: ");
 double B3 = double.Parse(Console.ReadLine());
 
 
-double result = Math.Sqrt(Math.Pow(B2 - A1,2) + Math.Pow (B2 - B1,2) + Math.Pow(B3-A3,2));
+double result = Math.Sqrt(Math.Pow(B1 - A1,2) + Math.Pow(B2 - A2,2) + Math.Pow(B3-A3,2));
 {
     Console.WriteLine($"Расстояние между точками: {result}");
 }
