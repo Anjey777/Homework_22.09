@@ -3,21 +3,9 @@
 3 -> 1, 8, 27
 5 -> 1, 8, 27, 64, 125
 */
-
-
-
-
-
-
-
-
-
-
-int  h, c = 0;
-    int (a[3], g[3]);
-    int i, v, f;
-    printf("Введите координаты по оси x , y, z для точки А  :\n");
-    for(i = 0; i < 3; i++)
-    {
-        scanf("%f", &a[i]);
-    }
+Console.WriteLine("Введите число:");
+int number = int.Parse(Console.ReadLine());
+{
+    for (int i = 0; i < number; i++)
+        Console.WriteLine(i * i * i);
+}
